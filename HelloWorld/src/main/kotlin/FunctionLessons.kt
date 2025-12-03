@@ -1,6 +1,6 @@
 fun main(){
 //First Lesson------------------------------------------
-    sayHello("Cameron", 19 /*Arguments for parameter 'name' and 'age'*/)
+    sayHello("Conner", 19 /*Arguments for parameter 'name' and 'age'*/)
     sayHello("Charles", 23)
 
     val hasConnection = true
