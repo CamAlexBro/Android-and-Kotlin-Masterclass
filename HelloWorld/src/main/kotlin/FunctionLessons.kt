@@ -63,3 +63,15 @@ fun sendMessage(name: String = "Cameron", message: String = "No Message"){
     println("Name = $name and message = $message")
     // Making Changes to push
 }
+
+//vararg lesson ----------------------------------------------------
+
+fun sum(vararg nums): Int{
+    var total = 0
+    for(num in nums){
+        total += num
+    }
+
+    // Edit 1-15-26
+
+}
