@@ -19,7 +19,15 @@ fun main(){
     sendMessage()
     sendMessage("Charles")
     sendMessage(message =  "Howdy")
-    sendMessage("Charles", "Howdy")
+    sendMessage(
+        name = "Charles",
+        message = "Howdy"
+    )
+
+//vararg lesson------------------------------------------
+    println(sum(5,6,7,8))
+    println(sum(1,2,3,4,5,6,7,8,9,9,8,7,6,5,4,3,2,10))
+    printAll(1,2,3,4,5,6,7,8,9,9,8,7,6,5,4,3,2,10)
 }
 
 
@@ -64,14 +72,20 @@ fun sendMessage(name: String = "Cameron", message: String = "No Message"){
     // Making Changes to push
 }
 
-//vararg lesson ----------------------------------------------------
+//vararg lesson------------------------------------------------
+fun sum(a: Int,b: Int,c: Int,d: Int): Int{
+  return a + b + c + d
+}
 
-fun sum(vararg nums): Int{
-    var total = 0
-    for(num in nums){
-        total += num
+// a variable argument or 'vararg' acts as an array full of objects of the given data type
+fun sum(vararg nums: Int): Int {
+    var result = 0
+    for (num in nums){
+        result += num
     }
+    return result
+}
 
-    // Edit 1-15-26
-
+fun printAll(vararg nums: Int){
+    nums.forEach{ println(it)}
 }
